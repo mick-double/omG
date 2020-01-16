@@ -1,4 +1,4 @@
-# 最初に考えた数字宛クイズ
+# 最初に考えた数字当てクイズ
 import random
 print('5回のうちに1から6までの数字を当ててください')
 answer = random.randint(1,7)
