@@ -23,7 +23,7 @@ def atequiz(randmlimit=7,trynum=5):
 
 
 # 入力は randmlimit > trynumでないと意味がない
-atequiz(4,2)
+atequiz(5,2)
 
 
 
