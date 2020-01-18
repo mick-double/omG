@@ -1,17 +1,17 @@
 # 最初に考えた数字当てクイズ
 # ダブルチャンスがある抽選　n個の数からいくつ当たるか
 # ダブルチャンスへ入力した数値がそのまま使われる
-
+import sys
 import random
 
-def atequiz(randmlimit=7,trynum=5):
+def atequiz(randmlimit=7,trynum=2):
     """ ちょっと拡張してみた 関数にしていくつでもできるように拡張  
 
     返値はインプットの文字列
 
     """
 
-    print("""{0}回のうちに1から{0}までの数字を当ててください 
+    print("""1から{0}までの数字を当ててください 
     {1}回までリトライできます。""".format(randmlimit,trynum))
     answer = random.randint(1,randmlimit)
     inputnum = []
@@ -22,7 +22,7 @@ def atequiz(randmlimit=7,trynum=5):
             print('\n\n\nおめでとうございます。正解です')
             print()
             break
-        elif i < 4:
+        elif i < trynum+1:
             print('\n残念。もう一回!!')
         else:
             print('\n\n残念ながら不正解でした')
@@ -36,7 +36,7 @@ def atequiz(randmlimit=7,trynum=5):
 def saichusen(limit=10):
     """ ダブル抽選会 """
     print('あなたの選んだ',inputnum,'を再抽選します')
-    print('何個の抽選にしますか？3個以内にしてください')
+    print('何個の抽選にしますか？できるだけ3個以内にしてください')
     dinputnum = int(input())
     print('入力=',dinputnum)
     
@@ -63,21 +63,39 @@ def saichusen(limit=10):
         print('当たったのは',atari,'です')
     
 
+#なんでも入力しようと思う。そのコマンドライン引数オプション
+#
+#  書式　python mato.py limitnum trynum
+#     limitnum:最大の値（ここまでの値の中から当てる）
+#     trynum:トライできる回数
+#
 
+print(sys.argv)
+trynum = 2
+limitnum = 10
+print(len(sys.argv))
 
+if len(sys.argv) < 2:
+    limitnum = 10
+elif len(sys.argv) == 2:
+    limitnum = int(sys.argv[1])
+else:
+    limitnum = int(sys.argv[1])
+    trynum = int(sys.argv[2])
+  
     
 # 入力は randmlimit > trynumでないと意味がない
 # まずは数当てゲーム
-inputnum = atequiz(10,2)
+inputnum = atequiz(limitnum,trynum)
 
-# debug 用
+# debug 用 こうすればデバッグもできるんだな
 # import pdb; pdb.set_trace()
 
 # 入力した値を使って再抽選する
 # inputnumは外で使うとそのまま次の関数でも生きるのか
 # グローバル変数になってしまっている
 
-saichusen()
+saichusen(limitnum)
 
     
 
