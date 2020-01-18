@@ -1,6 +1,7 @@
+# 最初に考えた数字当てクイズ
+
 def atequiz(randmlimit=7,trynum=5):
-    """ ちょっと拡張してみた   """
-    # 最初に考えた数字宛クイズ
+    """ ちょっと拡張してみた 関数にしていくつでもできるように拡張  """
     import random
     print('{0}回のうちに1から{0}までの数字を当ててください\n {1}回までリトライできます。'.format(randmlimit,trynum))
     answer = random.randint(1,randmlimit)
