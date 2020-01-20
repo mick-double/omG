@@ -107,9 +107,13 @@ inputstr2 = inputstr1.strip(']')
 
 
 f = open('choise.txt','w')
-n = f.write(str(inputstr2))
+n = f.write(str(inputstr2)+'\n')
 f.close()
-    
+print('出来上がったファイルの中身を見てみる choise.txt:')
+f = open ('choise.txt','r')
+for line in f :
+    print(line.strip())
+f.close
 
 
 
