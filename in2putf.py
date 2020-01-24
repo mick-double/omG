@@ -17,5 +17,3 @@ with open('txtfile.txt','r') as f :
 
 print('txtfile.txtの中のtakaraの数は',count)
 print('otextfile.txtの中のomankoの数は',ocount)
-
-
