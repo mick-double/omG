@@ -3,6 +3,8 @@
 # with を使ってcloseをなくした withを使うと例外が起きてもcloseしてくれる
 # もうちょっとスマートな方法でやってみる　countを使う
 # takaraはomankoに置換（ちかん）
+# 複数のPCで行う場合というより、VScodeとgit bashでやる場合にもAuthorの変更をすれば再度PULLが必要
+# でも、これでmergeの仕方もわかった。どこが競合するかも表示してくれることがわかった。
 
 with open('txtfile.txt','r') as f :
     with open('otextfile.txt','w') as of:
@@ -17,8 +19,5 @@ with open('txtfile.txt','r') as f :
 
 print('txtfile.txtの中のtakaraの数は',count)
 print('otextfile.txtの中のomankoの数は',ocount)
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 97523546c2880b234b8d40309d4fb5feebfd4834
