@@ -1,6 +1,8 @@
 aaaa
 takara
 
+takara
+
 bbbb
 takara
 
