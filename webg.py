@@ -1,11 +1,13 @@
 # error 処理を入れる
 
-import requests,bs4,csv
+import requests,bs4,csv,pprint,json
 
 output00 = 'getweb.html'
 output01 = 'get_select.html'
+soure_html = 'http://weather.livedoor.com/forecast/webservice/json/v1?city=120010'
 
-res = requests.get('https://bestpartner08.jp/blog-entry-890.html')
+res = requests.get(soure_html)
+pprint.pprint(res.json())
 
 if res.status_code != 200 :
     res.raise_for_status()
@@ -13,11 +15,15 @@ if res.status_code != 200 :
 
 soup = bs4.BeautifulSoup(res.text,"html.parser")
 print(soup.title)
+
+# htmlを整形してくれるもの
+# print(soup.prettify())
 elems = soup.select('#inner-contents a')
 
 with open(output00,'w') as f:
     print('正常に読まれてgetweb.htmlファイに書き込みます！')
-    f.write(res.text)
+    str_0 = json.dumps(res.json())
+    f.write(str_0)
 
 with open(output01,'w') as fs:
     print('selectされた内容を抽出')

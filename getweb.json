@@ -1,0 +1,174 @@
+{
+    "pinpointLocations": [
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1210000",
+            "name": "千葉市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1220300",
+            "name": "市川市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1220400",
+            "name": "船橋市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1220700",
+            "name": "松戸市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1220800",
+            "name": "野田市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1221100",
+            "name": "成田市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1221200",
+            "name": "佐倉市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1221600",
+            "name": "習志野市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1221700",
+            "name": "柏市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1221900",
+            "name": "市原市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1222000",
+            "name": "流山市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1222100",
+            "name": "八千代市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1222200",
+            "name": "我孫子市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1222400",
+            "name": "鎌ケ谷市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1222700",
+            "name": "浦安市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1222800",
+            "name": "四街道市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1223000",
+            "name": "八街市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1223100",
+            "name": "印西市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1223200",
+            "name": "白井市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1223300",
+            "name": "富里市"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1232200",
+            "name": "酒々井町"
+        },
+        {
+            "link": "http://weather.livedoor.com/area/forecast/1232900",
+            "name": "栄町"
+        }
+    ],
+    "link": "http://weather.livedoor.com/area/forecast/120010",
+    "forecasts": [
+        {
+            "dateLabel": "今日",
+            "telop": "曇り",
+            "date": "2020-02-15",
+            "temperature": {
+                "min": null,
+                "max": null
+            },
+            "image": {
+                "width": 50,
+                "url": "http://weather.livedoor.com/img/icon/8.gif",
+                "title": "曇り",
+                "height": 31
+            }
+        },
+        {
+            "dateLabel": "明日",
+            "telop": "曇時々雨",
+            "date": "2020-02-16",
+            "temperature": {
+                "min": {
+                    "celsius": "9",
+                    "fahrenheit": "48.2"
+                },
+                "max": {
+                    "celsius": "16",
+                    "fahrenheit": "60.8"
+                }
+            },
+            "image": {
+                "width": 50,
+                "url": "http://weather.livedoor.com/img/icon/10.gif",
+                "title": "曇時々雨",
+                "height": 31
+            }
+        },
+        {
+            "dateLabel": "明後日",
+            "telop": "曇時々晴",
+            "date": "2020-02-17",
+            "temperature": {
+                "min": null,
+                "max": null
+            },
+            "image": {
+                "width": 50,
+                "url": "http://weather.livedoor.com/img/icon/9.gif",
+                "title": "曇時々晴",
+                "height": 31
+            }
+        }
+    ],
+    "location": {
+        "city": "千葉",
+        "area": "関東",
+        "prefecture": "千葉県"
+    },
+    "publicTime": "2020-02-15T17:00:00+0900",
+    "copyright": {
+        "provider": [
+            {
+                "link": "http://tenki.jp/",
+                "name": "日本気象協会"
+            }
+        ],
+        "link": "http://weather.livedoor.com/",
+        "title": "(C) LINE Corporation",
+        "image": {
+            "width": 118,
+            "link": "http://weather.livedoor.com/",
+            "url": "http://weather.livedoor.com/img/cmn/livedoor.gif",
+            "title": "livedoor 天気情報",
+            "height": 26
+        }
+    },
+    "title": "千葉県 千葉 の天気",
+    "description": {
+        "text": " 前線が東シナ海から日本の南に停滞しており、上空の気圧の谷が東日本を通過中です。一方、北日本から東日本は、高気圧に緩やかに覆われています。\n\n 千葉県は、曇りとなっています。\n\n 15日は、上空の気圧の谷の影響で、曇りとなるでしょう。\n\n 16日は、低気圧が日本海と東日本の南岸を東北東へ進むため、曇り時々雨で、朝から雷を伴う所がある見込みです。南部では、昼前に激しく降る所があるでしょう。\n\n 千葉県の太平洋沿岸の海上では、15日は、波がやや高いでしょう。16日は、しける見込みです。船舶は高波に注意してください。\n\n<天気変化等の留意点>\n 16日は、雷雨になる所がある見込みです。急な強い雨、落雷、突風、降ひょうに注意してください。強風やしけとなる所がある見込みです。飛散物、海岸での作業に注意してください。",
+        "publicTime": "2020-02-15T22:11:00+0900"
+    }
+}
