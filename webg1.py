@@ -1,3 +1,6 @@
+"""
+「君の好きなとこ」をとってくる
+"""
 # error 処理を入れる
 
 import requests,bs4,csv
